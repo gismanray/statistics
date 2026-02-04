@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+<title>Two-Sample K-S Test</title>
+<style type="text/css">
+	.canv {position:absolute; top:100px; left:100px; border: 1px gray solid;}
+	.pnl {position:absolute; left:100px; top:415px; width:500px; height:90px; border:1px gray solid; font-family:arial; font-size:11pt;}
+	.nbox {position:absolute; top:60px; width:35px; text-align:right;}
+	.lnks {position:absolute; left:625px; top: 100px; width:280px; background-color:#ffffe8; border:1px gray solid; padding:15px; font-family:arial; font-size:11.5pt;}
+	.info {position:absolute; left:625px; top: 250px; width:280px; border:0px gray solid; padding-left:10px; padding-right:10px; font-family:arial; font-size:11.5pt;}
+	.equ {font-family: "Times New Roman", Times, serif; font-style:italic;}
+	p {margin-top:0px; margin-bottom:5px;}
+	a {color:blue; text-decoration:none;}
+	a:hover {color:red;}
+</style>
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="../scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../scripts/jcanvas.min.js" type="text/javascript"></script>
+<script src="scripts/ks2.js" type="text/javascript"></script>
+</head>
+<body>
+<h2 style="position:absolute; top:30px; left:100px; font-family:arial;">Two-Sample K-S Test</h2>
+<canvas id='canvas' width="500" height="300" class="canv"></canvas>
+<div class="pnl">
+	<span style="position:absolute; left:10px; top:10px;"><input type='radio' name='tail' id='one' value='one' checked='checked'>&nbsp;One tail</span>
+	<span style="position:absolute; left:10px; top:35px; color:gray;"><input type='radio' name='tail' id='two' value='two'>&nbsp;Two tails</span>
+	<span style="position:absolute; left:10px; top:60px; color:gray;"><input type='radio' name='tail' id='mid' value='mid' style='disabled:true;'>&nbsp;Middle</span>
+	<span style="position:absolute; left:180px; top:10px;">K-S D</span>
+	<input type='text' id='dbox' style="position:absolute; left:240px; top:10px; width:75px; text-align:right;">
+	<span style="position:absolute; left:180px; top:35px;">p-value</span>
+	<input type='text' id='pbox' style="position:absolute; left:240px; top:35px; width:75px; text-align:right;">
+	<span style="position:absolute; left:180px; top:60px;">n1, n2</span>
+	<input type='text' id='n1' value='' class='nbox' style="left:240px;">
+	<input type='text' id='n2' value='' class='nbox' style="left:280px;">
+	<button id='compu' style="position:absolute; left:400px; top:10px; width:80px; height:25px;">Compute</button>
+	<button id='clear' style="position:absolute; left:400px; top:55px; width:80px; height:25px;">Clear</button>
+</div>
+
+<div class="lnks">
+<a href="../normal/">Standard Normal Distribution</a><br>
+<a href="../student/">Student's t Distribution</a><br>
+<a href="../fdistrib/">F Distribution</a><br>
+<a href="../chisq/">Chi-Square Distribution</a><br>
+<a href="../ks1/">One-Sample Kolmogorov-Smirnov Test</a><br>
+<span style="color:red;">Two-Sample Kolmogorov-Smirnov Test</span>
+</div>
+
+<div class="info">
+<p>The p-value of two sample (sizes n<sub>2</sub>, n<sub>2</sub>) K-S test statistic <span class="equ">d</span>
+can be derived from &chi;<sup>2</sup> distribution with 2 degrees of freedom because</p>
+<p style="text-align:center;"><img src="images/equation1.png"></p>
+<p>To find the critical <span class="equ">D</span><sub>c</sub> of a p-value, first find the corresponding &chi;<sup>2</sup>
+of the p-value, then <span class="equ">D</span><sub>c</sub> can be derived from</p>
+<p style="text-align:center;"><img src="images/equation2.png"></p>
+<p><a href="http://www.soest.hawaii.edu/wessel/courses/gg313/Critical_KS.pdf" target="_blank">
+	Two-sample K-S test critical D table</a></p>
+</div>
+
+</body>
+</html>

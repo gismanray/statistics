@@ -1,0 +1,92 @@
+<!DOCTTYPE html>
+<html>
+<head>
+<title>K-S Table</title>
+<style type="text/css">
+	a {color:blue; text-decoration:none;}
+	a:hover {color:red;}
+	body {font-family:arial;}
+	h2 {position:absolute; left:25px; top:30px;}
+	th {font-weight:normal; font-size:11pt; border-top:1px black solid; border-bottom:1px black solid;}
+	td {width:45pt; font-size:10pt; text-align:center;}
+	.uline {border-bottom:1px black solid}
+	.act.space {height: 18pt; vertical-align:bottom;}
+</style>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$(document).ready(function() {
+	$(".act").on("mouseover", function() { $(this).css("background-color", "yellow"); })
+		 .on("mouseout", function() { $(this).css("background-color", "white"); });
+});
+</script>
+</head>
+<body>
+<h2>Critical Values of One-Sample Kolmogorov-Smirnov Test Statistic D</h2>
+<table cellspacing="0" style="position:absolute; top:100px; left:25px;">
+<tr><td style="border-top:1px black solid">&nbsp;</td><th colspan="5">Alpha</th></tr>
+<tr><td class="uline"><i>n</i></td><td class="uline">0.20</td><td class="uline">0.10</td><td class="uline">0.05</td><td class="uline">0.02</td><td class="uline">0.01</td></tr>
+<tr class="act"><td>1</td><td>0.900</td><td>0.950</td><td>0.975</td><td>0.990</td><td>0.995</td></tr>
+<tr class="act"><td>2</td><td>0.684</td><td>0.776</td><td>0.842</td><td>0.900</td><td>0.929</td></tr>
+<tr class="act"><td>3</td><td>0.565</td><td>0.636</td><td>0.708</td><td>0.785</td><td>0.829</td></tr>
+<tr class="act"><td>4</td><td>0.493</td><td>0.656</td><td>0.624</td><td>0.689</td><td>0.734</td></tr>
+<tr class="act"><td>5</td><td>0.447</td><td>0.509</td><td>0.563</td><td>0.627</td><td>0.669</td></tr>
+<tr class="act space"><td>6</td><td>0.410</td><td>0.468</td><td>0.519</td><td>0.577</td><td>0.617</td></tr>
+<tr class="act"><td>7</td><td>0.381</td><td>0.436</td><td>0.483</td><td>0.538</td><td>0.576</td></tr>
+<tr class="act"><td>8</td><td>0.358</td><td>0.410</td><td>0.454</td><td>0.507</td><td>0.542</td></tr>
+<tr class="act"><td>9</td><td>0.339</td><td>0.387</td><td>0.430</td><td>0.480</td><td>0.513</td></tr>
+<tr class="act"><td>10</td><td>0.323</td><td>0.369</td><td>0.409</td><td>0.457</td><td>0.489</td></tr>
+<tr class="act space"><td>11</td><td>0.308</td><td>0.352</td><td>0.391</td><td>0.437</td><td>0.468</td></tr>
+<tr class="act"><td>12</td><td>0.296</td><td>0.338</td><td>0.375</td><td>0.419</td><td>0.449</td></tr>
+<tr class="act"><td>13</td><td>0.285</td><td>0.325</td><td>0.361</td><td>0.404</td><td>0.432</td></tr>
+<tr class="act"><td>14</td><td>0.275</td><td>0.314</td><td>0.349</td><td>0.390</td><td>0.418</td></tr>
+<tr class="act"><td>15</td><td>0.266</td><td>0.304</td><td>0.338</td><td>0.377</td><td>0.404</td></tr>
+<tr class="act space"><td>16</td><td>0.258</td><td>0.295</td><td>0.327</td><td>0.366</td><td>0.392</td></tr>
+<tr class="act"><td>17</td><td>0.250</td><td>0.286</td><td>0.318</td><td>0.355</td><td>0.381</td></tr>
+<tr class="act"><td>18</td><td>0.244</td><td>0.279</td><td>0.309</td><td>0.346</td><td>0.371</td></tr>
+<tr class="act"><td>19</td><td>0.237</td><td>0.271</td><td>0.301</td><td>0.337</td><td>0.361</td></tr>
+<tr class="act"><td class="uline">20</td><td class="uline">0.232</td><td class="uline">0.265</td><td class="uline">0.294</td><td class="uline">0.329</td><td class="uline">0.352</td></tr>
+</table>
+
+<table cellspacing="0" style="position:absolute; top:100px; left:425px;">
+<tr><td style="border-top:1px black solid">&nbsp;</td><th colspan="5">Alpha</th></tr>			
+<tr><td class="uline"><i>n</i></td><td class="uline">0.20</td><td class="uline">0.10</td><td class="uline">0.05</td><td class="uline">0.02</td><td class="uline">0.01</td></tr>
+<tr class="act"><td>21</td><td>0.226</td><td>0.259</td><td>0.287</td><td>0.321</td><td>0.344</td></tr>
+<tr class="act"><td>22</td><td>0.221</td><td>0.253</td><td>0.281</td><td>0.314</td><td>0.337</td></tr>
+<tr class="act"><td>23</td><td>0.216</td><td>0.247</td><td>0.275</td><td>0.307</td><td>0.330</td></tr>
+<tr class="act"><td>24</td><td>0.212</td><td>0.242</td><td>0.269</td><td>0.301</td><td>0.323</td></tr>
+<tr class="act"><td>25</td><td>0.208</td><td>0.238</td><td>0.264</td><td>0.295</td><td>0.317</td></tr>
+<tr class="act space"><td>26</td><td>0.204</td><td>0.233</td><td>0.259</td><td>0.290</td><td>0.311</td></tr>
+<tr class="act"><td>27</td><td>0.200</td><td>0.229</td><td>0.254</td><td>0.284</td><td>0.305</td></tr>
+<tr class="act"><td>28</td><td>0.197</td><td>0.225</td><td>0.250</td><td>0.279</td><td>0.300</td></tr>
+<tr class="act"><td>29</td><td>0.193</td><td>0.221</td><td>0.246</td><td>0.275</td><td>0.295</td></tr>
+<tr class="act"><td>30</td><td>0.190</td><td>0.218</td><td>0.242</td><td>0.270</td><td>0.290</td></tr>
+<tr class="act space"><td>31</td><td>0.187</td><td>0.214</td><td>0.238</td><td>0.266</td><td>0.285</td></tr>
+<tr class="act"><td>32</td><td>0.184</td><td>0.211</td><td>0.234</td><td>0.262</td><td>0.281</td></tr>
+<tr class="act"><td>33</td><td>0.182</td><td>0.208</td><td>0.231</td><td>0.258</td><td>0.277</td></tr>
+<tr class="act"><td>34</td><td>0.179</td><td>0.205</td><td>0.227</td><td>0.254</td><td>0.273</td></tr>
+<tr class="act"><td>35</td><td>0.177</td><td>0.202</td><td>0.224</td><td>0.251</td><td>0.269</td></tr>
+<tr class="act space"><td>36</td><td>0.174</td><td>0.199</td><td>0.221</td><td>0.247</td><td>0.265</td></tr>
+<tr class="act"><td>37</td><td>0.172</td><td>0.196</td><td>0.218</td><td>0.244</td><td>0.262</td></tr>
+<tr class="act"><td>38</td><td>0.170</td><td>0.194</td><td>0.215</td><td>0.241</td><td>0.258</td></tr>
+<tr class="act"><td>39</td><td>0.168</td><td>0.191</td><td>0.213</td><td>0.238</td><td>0.255</td></tr>
+<tr class="act"><td class="uline">40</td><td class="uline">0.165</td><td class="uline">0.189</td><td class="uline">0.210</td><td class="uline">0.235</td><td class="uline">0.252</td></tr>
+<tr><td><i>n</i> &gt; 40<br>approx.</td>
+<td align="right"><img src="images/image002.gif"></td>
+<td align="right"><img src="images/image004.gif"></td>
+<td align="right"><img src="images/image006.gif"></td>
+<td align="right"><img src="images/image008.gif"></td>
+<td align="right"><img src="images/image010.gif"></td>
+</tr>
+</table>
+
+<div style="position:absolute; left:830px; top:75px; background-color:#ffffe8; border:1px gray solid; padding:15px; font-family:arial; font-size:11.5pt;">
+<a href="../normal/">Standard Normal Distribution</a><br>
+<a href="../student/">Student's t Distribution</a><br>
+<a href="../fdistrib/">F Distribution</a><br>
+<a href="../chisq/">Chi-Square Distribution</a><br>
+<span style="color:red">One-Sample Kolmogorov-Smirnov Test</span><br>
+<a href="../ks2/">Two-Sample Kolmogorov-Smirnov Test</a>
+</div>
+
+</body>
+</html>

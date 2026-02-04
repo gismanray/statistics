@@ -1,1 +1,1 @@
-# statistics
+# Probability Distributions
